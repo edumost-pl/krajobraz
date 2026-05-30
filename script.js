@@ -3,6 +3,6 @@ document
 .addEventListener("click", () => {
 
 window.location.href =
-"/indexKrajobraz.html";
+"indexKrajobraz.html";
 
 });
