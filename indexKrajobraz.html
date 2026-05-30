@@ -15,8 +15,14 @@
     <a href="index.html" class="back-btn">
         ← Powrót do strony głównej
     </a>
-    
-    <!-- PROGRESS BAR --> <div class="progress-container"> <div class="progress-wrapper"> <div class="progress-bar" id="progressBar"></div> </div> <div class="progress-label" id="progressText"> 📍 Etap 1 z 16 </div> </div>
+
+    <!-- PROGRESS BAR -->
+    <div class="progress-container">
+        <div class="progress-wrapper">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+        <div class="progress-label" id="progressText"> 📍 Etap 1 z 16 </div>
+    </div>
 
     <!-- 1 -->
     <section class="slide active" id="slide1">
@@ -49,57 +55,62 @@
     <!-- 2 Krajobraz -->
     <section class="slide" id="slide2">
         <div class="card lesson-block">
-            
+
             <h2>Co to jest krajobraz?</h2>
 
             <p class="pl"><b>🇵🇱 Krajobraz to wygląd fragmentu powierzchni Ziemi.</b></p>
             <p>🌿 Krajobraz to wszystko, co widzimy wokół siebie, gdy patrzymy na dany teren. Mogą to być góry, rzeki,
                 lasy, pola, a także domy i drogi.</p>
             <div class="flex">
-                <img src="https://www.teraz-srodowisko.pl/images/illustrations/wiadomosc/15343_large.jpg" class="zum">
-                <img src="https://raw.github.com/ksushatarasenko/polishSzkola_4klasa_assets/main/przyroda/rozdial6/str140_1.png"
-                    class="zum">
-                <img src="https://raw.github.com/ksushatarasenko/polishSzkola_4klasa_assets/main/przyroda/rozdial6/str140_5.png"
-                    class="zum">
+                <div class="landscape-card">
+                    <img src="https://www.teraz-srodowisko.pl/images/illustrations/wiadomosc/15343_large.jpg"
+                        class="zum">
+                </div>
+                <div class="landscape-card">
+                    <img src="https://raw.github.com/ksushatarasenko/polishSzkola_4klasa_assets/main/przyroda/rozdial6/str140_1.png"
+                        class="zum">
+                </div>
+                <div class="landscape-card">
+                    <img src="https://raw.github.com/ksushatarasenko/polishSzkola_4klasa_assets/main/przyroda/rozdial6/str140_5.png"
+                        class="zum">
+                </div>
             </div>
 
-            <h3>Krajobraz się zmienia</h2>
-                <p>Krajobraz może się zmieniać. Wpływa na niego przyroda (np. wiatr, deszcz i rzeki) oraz działalność
-                    człowieka.</p>
-                <!-- ru -->
-                <button class="ru-btn modal-trigger" data-modal="ru_3">Ua 🇺🇦</button>
+            <h3>Krajobraz się zmienia</h3>
+            <p>Krajobraz może się zmieniać. Wpływa na niego przyroda (np. wiatr, deszcz i rzeki) oraz działalność
+                człowieka.</p>
+            <!-- ru -->
+            <button class="ru-btn modal-trigger" data-modal="ru_3">Ua 🇺🇦</button>
 
-                <div class="modal" data-modal="ru_3">
-                    <div class="modal-content">
-                        <span class="close">&times;</span>
-                        <p>🌿 Ландшафт — це зовнішній вигляд певної частини земної поверхні.</p>
-                        <p>Ландшафт — це все, що ми бачимо навколо себе, коли дивимося на певну місцевість. Це можуть
-                            бути гори, річки, ліси, поля, а також будинки й дороги.</p>
-                        <h3>Краєвид змінюється</h4>
-                            <p>Краєвид може змінюватися. На нього впливають сили природи (наприклад вітер, дощ і річки),
-                                а також діяльність людини.</p>
-                    </div>
+            <div class="modal" data-modal="ru_3">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>🌿 Ландшафт — це зовнішній вигляд певної частини земної поверхні.</p>
+                    <p>Ландшафт — це все, що ми бачимо навколо себе, коли дивимося на певну місцевість. Це можуть
+                        бути гори, річки, ліси, поля, а також будинки й дороги.</p>
+                    <h3>Краєвид змінюється</h4>
+                        <p>Краєвид може змінюватися. На нього впливають сили природи (наприклад вітер, дощ і річки),
+                            а також діяльність людини.</p>
                 </div>
-                <!-- end ru -->
+            </div>
+            <!-- end ru -->
+            <!-- navigation -->
+            <div class="navigation">
+                <button class="btn-back" onclick="prevSlide()">
+                    ← Wstecz
+                </button>
 
-                <div class="navigation">
-
-                    <button class="btn-secondary" onclick="prevSlide()">
-                        ← Wstecz
-                    </button>
-
-                    <button class="btn" onclick="nextSlide()">
-                        Dalej →
-                    </button>
-
-                </div>
-
+                <button class="btn-next" onclick="nextSlide()">
+                    Dalej →
+                </button>
+            </div>
+            <!-- end navigation -->
         </div>
     </section>
     <!-- 3 Skladniki -->
     <section class="slide" id="slide3">
         <div class="card lesson-block">
-            
+
             <h2>Składniki krajobrazu</h2>
 
             <p class="pl">
@@ -145,13 +156,24 @@
 
             </div>
 
-            <div class="remember">
-                <h3>Zapamiętaj!</h3>
-                <p>
-                    Składniki krajobrazu to:
-                    <b>ukształtowanie terenu, skały, wody,
-                        rośliny, zwierzęta oraz budynki i drogi.</b>
+            <div class="remember-note">
+                <!-- <div class="pin">📌</div> -->
+
+                <h3>🧠 Super pamięć!</h3>
+
+                <p>🧩 Krajobraz =<br> <span style="color: #2E7D32;">🏔️ Ukształtowanie terenu</span> + <span
+                        style="color: #616161;">🪨 Skały</span> + <span style="color: #0288D1;">💧 Wody</span> +<br>
+                    <span style="color: #43A047;">🌳 Rośliny</span> + <span style="color: #F57C00;">🦊 Zwierzęta</span>
+                    + 🏠 Budynki i drogi
                 </p>
+                <!-- <ul>
+                    <li>ukształtowanie terenu, </li>
+                    <li>skały, </li>
+                    <li>wody,</li>
+                    <li>rośliny, </li>
+                    <li>zwierzęta,</li>
+                    <li>budynki i drogi.</li>
+                </ul> -->
             </div>
 
             <!-- UA -->
@@ -201,28 +223,23 @@
 
             <!-- END UA -->
 
+            <!-- navigation -->
             <div class="navigation">
-
-                <button class="btn-secondary" onclick="prevSlide()">
+                <button class="btn-back" onclick="prevSlide()">
                     ← Wstecz
                 </button>
 
-                <button class="btn" onclick="nextSlide()">
+                <button class="btn-next" onclick="nextSlide()">
                     Dalej →
                 </button>
-
             </div>
+            <!-- end navigation -->
 
         </div>
     </section>
     <!-- 4 Rodzaje krajobrazu -->
     <section class="slide" id="slide4">
         <div class="lesson-block">
-            <div class="progress-wrapper">
-                <div class="progress-bar" id="progressBar"></div>
-            </div>
-
-            <div class="progress-label" id="progressText"></div>
 
             <h2>Rodzaje krajobrazu</h2>
             <p class="centr">Krajobraz może być dwóch rodzajów:</p>
@@ -233,37 +250,37 @@
             <div class="cards">
 
                 <div class="card">
+                    <div class="landscape-card">
+                        <img src="https://raw.github.com/ksushatarasenko/polishSzkola_4klasa_assets/main/przyroda/rozdial6/Krajobraz_naturalny.png"
+                            class="zum">
+                    </div>
 
-                    <img
-                        src="https://t3.ftcdn.net/jpg/05/40/89/50/360_F_540895071_FmyTgZsTnnhFohtSkAUZcRlniifCSUDT.jpg">
 
                     <h3>🌲 Krajobraz naturalny</h3>
-
-                    <p>
-                        Powstał bez udziału człowieka.
-                    </p>
-
+                    <p>Powstał bez udziału człowieka.</p>
                 </div>
 
                 <div class="card">
+                    <div class="landscape-card">
+                        <img src="https://raw.github.com/ksushatarasenko/polishSzkola_4klasa_assets/main/przyroda/rozdial6/Krajobraz_kulturowy.png"
+                            class="zum">
+                    </div>
 
-                    <img
-                        src="https://mag-assets.travelist.pl/wp-content/uploads/2023/10/wroclaw-2-1-1024x745.jpg?ssl=1">
 
                     <h3>🏙️ Krajobraz kulturowy</h3>
-
-                    <p>
-                        Został zmieniony przez człowieka.
-                    </p>
-
+                    <p>Został zmieniony przez człowieka.</p>
                 </div>
 
             </div>
-            <div class="remember">
-                <h4>💡 Zapamiętaj!</h3>
-                    <p class="centr"><em><b>Krajobraz naturalny tworzy przyroda, a krajobraz kulturowy –
-                                człowiek.</b></em></p>
+            <div class="remember-note">
+                <h3>💡 Zapamiętaj!</h3>
+
+                <p>
+                    Przyroda tworzy <strong>krajobraz naturalny</strong> 🌲<br>
+                    Człowiek tworzy <strong>krajobraz kulturowy</strong> 🏙️
+                </p>
             </div>
+
             <!-- ru -->
             <button class="ru-btn modal-trigger" data-modal="ru_5">Ua 🇺🇦</button>
 
@@ -294,23 +311,23 @@
                 </div>
             </div>
 
+            <!-- navigation -->
             <div class="navigation">
-
-                <button class="btn-secondary" onclick="prevSlide()">
+                <button class="btn-back" onclick="prevSlide()">
                     ← Wstecz
                 </button>
 
-                <button class="btn" onclick="nextSlide()">
+                <button class="btn-next" onclick="nextSlide()">
                     Dalej →
                 </button>
-
             </div>
+            <!-- end navigation -->
 
     </section>
     <!-- 5 Rodzaje krajobrazu kulturowego -->
     <section class="slide" id="slide5">
         <div class="lesson-block">
-           
+
             <h2>🏘️ Rodzaje krajobrazu kulturowego</h2>
             <p class="centr"><b>Krajobraz kulturowy można podzielić na kilka rodzajów:</b></p>
             <ul>
@@ -321,8 +338,11 @@
             <div class="cards">
 
                 <div class="card">
-                    <img src="https://raw.github.com/ksushatarasenko/polishSzkola_4klasa_assets/main/przyroda/rozdial6/rolniczy.png"
-                        class="zum" style="height: 50%;">
+                    <div class="landscape-card">
+                        <img src="https://raw.github.com/ksushatarasenko/polishSzkola_4klasa_assets/main/przyroda/rozdial6/rolniczy.png"
+                            class="zum">
+                    </div>
+
 
                     <h3>🌾 Krajobraz rolniczy</h3>
                     <p>Związany z uprawą ziemi i hodowlą zwierząt.</p>
@@ -330,8 +350,11 @@
                 </div>
 
                 <div class="card">
-                    <img src="https://raw.github.com/ksushatarasenko/polishSzkola_4klasa_assets/main/przyroda/rozdial6/str140_5.png"
-                        class="zum">
+                    <div class="landscape-card">
+                        <img src="https://raw.github.com/ksushatarasenko/polishSzkola_4klasa_assets/main/przyroda/rozdial6/str140_5.png"
+                            class="zum">
+                    </div>
+
 
                     <h3>🏙️ Krajobraz miejski</h3>
                     <p>Występuje w miastach.</p>
@@ -340,22 +363,24 @@
 
 
                 <div class="card">
+                    <div class="landscape-card">
+                        <img src="https://raw.github.com/ksushatarasenko/polishSzkola_4klasa_assets/main/przyroda/rozdial6/str140_4.png"
+                            class="zum">
+                    </div>
 
-                    <img src="https://raw.github.com/ksushatarasenko/polishSzkola_4klasa_assets/main/przyroda/rozdial6/str140_4.png"
-                        class="zum">
 
-                    <h3>🏙️ Krajobraz kulturowy</h3>
+                    <h3>🏭 Krajobraz przemysłowy</h3>
 
                     <p>Związany z przemysłem i produkcją.</p>
                     <p><b>Przykłady:</b> fabryki, kopalnie, magazyny, elektrownie.</p>
                 </div>
 
             </div>
-            <div class="remember">
-                <h4>💡 Zapamiętaj!</h3>
-                    <p class="centr"><em><b>Krajobraz kulturowy tworzy człowiek. Może być <span
-                                    class="red">rolniczy</span>, <span class="red">miejski</span> lub <span
-                                    class="red">przemysłowy</span>.</b></em></p>
+            <div class="remember-note">
+                <h3>💡 Zapamiętaj!</h3>
+                <p class="centr"><em><b>Krajobraz kulturowy tworzy człowiek. <br>Może być <span
+                                class="red">rolniczy</span>, <span class="red">miejski</span> lub <span
+                                class="red">przemysłowy</span>.</b></em></p>
             </div>
             <!-- ru -->
             <button class="ru-btn modal-trigger" data-modal="ru_6">Ua 🇺🇦</button>
@@ -363,8 +388,7 @@
             <div class="modal" data-modal="ru_6">
                 <div class="modal-content">
                     <span class="close">&times;</span>
-                    <h4>🏠 Види культурного краєвиду</p>
-                    </h4>
+                    <h4>🏠 Види культурного краєвиду</h4>
                     <p>Культурний краєвид можна поділити на кілька видів:</p>
                     <ul>
                         <li><b>🌾 Сільськогосподарський краєвид</b>
@@ -381,7 +405,7 @@
                         </li>
                     </ul>
                     <h6>💡 Запам'ятай!</h6>
-                    <p class="centr"><em><b>Культурний краєвид створює людина. Він може бути <span
+                    <p class="centr"><em><b>Культурний краєвид створює людина. <br>Він може бути <span
                                     class="red">сільськогосподарським</span>, <span class="red">міським</span> або <span
                                     class="red">промисловим</span>.</b></em></p>
                 </div>
@@ -389,24 +413,24 @@
         </div>
 
 
+        <!-- navigation -->
         <div class="navigation">
-
-            <button class="btn-secondary" onclick="prevSlide()">
+            <button class="btn-back" onclick="prevSlide()">
                 ← Wstecz
             </button>
 
-            <button class="btn" onclick="nextSlide()">
+            <button class="btn-next" onclick="nextSlide()">
                 Dalej →
             </button>
-
         </div>
+        <!-- end navigation -->
         </div>
 
 
     </section>
     <!-- 6 Słowniczek -->
     <section class="slide" id="slide6">
-        
+
         <h2>📚 Słowniczek</h2>
 
         <div class="vocab-grid">
@@ -415,64 +439,126 @@
                 <h3>Krajobraz</h3>
                 <p>Ландшафт</p>
             </div>
+            <div class="word-card">
+                <h3>🏔️ Ukształtowanie terenu</h3>
+                <p>Рельєф місцевості</p>
+            </div>
+            <div class="word-card">
+                <h3>Teren</h3>
+                <p>Місцевість</p>
+            </div>
 
             <div class="word-card">
-                <h3>Las</h3>
+                <h3>🌲 Las</h3>
                 <p>Ліс</p>
             </div>
-
             <div class="word-card">
-                <h3>Rzeka</h3>
+                <h3>🌊 Rzeka</h3>
                 <p>Річка</p>
             </div>
-
             <div class="word-card">
-                <h3>Droga</h3>
+                <h3>Jezioro</h3>
+                <p>Озеро</p>
+            </div>
+            <div class="word-card">
+                <h3>🏔️ Góra</h3>
+                <p>Гора</p>
+            </div>
+            <div class="word-card">
+                <h3>Wzgórze</h3>
+                <p>Пагорб</p>
+            </div>
+            <div class="word-card">
+                <h3>Dolina</h3>
+                <p>Долина</p>
+            </div>
+            <div class="word-card">
+                <h3>Równina</h3>
+                <p>Рівнина</p>
+            </div>
+            <div class="word-card">
+                <h3>🏭 Fabryka </h3>
+                <p>Фабрика</p>
+            </div>
+            <div class="word-card">
+                <h3>⛏️ Kopalnia </h3>
+                <p>Шахта</p>
+            </div>
+            <div class="word-card">
+                <h3>📦 Magazyn</h3>
+                <p>Склад</p>
+            </div>
+            <div class="word-card">
+                <h3>⚡ Elektrownia</h3>
+                <p>Електростанція</p>
+            </div>
+            <div class="word-card">
+                <h3>🛣️ Droga</h3>
                 <p>Дорога</p>
             </div>
-
             <div class="word-card">
-                <h3>Budynek</h3>
+                <h3>🏠 Budynek</h3>
                 <p>Будівля</p>
+            </div>
+            <div class="word-card">
+                <h3>🏙️ Wieżowiec</h3>
+                <p>Хмарочос</p>
+            </div>
+            <div class="word-card">
+                <h3>🌾 Pole uprawne</h3>
+                <p>Орне поле</p>
+            </div>
+            <div class="word-card">
+                <h3>🍎 Sad</h3>
+                <p>Сад</p>
+            </div>
+            <div class="word-card">
+                <h3>🌼 Łąka</h3>
+                <p>Лука</p>
+            </div>
+            <div class="word-card">
+                <h3>🚜 Gospodarstwo rolne</h3>
+                <p>Фермерське господарство</p>
             </div>
 
         </div>
 
+        <!-- navigation -->
         <div class="navigation">
-
-            <button class="btn-secondary" onclick="prevSlide()">
+            <button class="btn-back" onclick="prevSlide()">
                 ← Wstecz
             </button>
 
-            <button class="btn" onclick="nextSlide()">
+            <button class="btn-next" onclick="nextSlide()">
                 Dalej →
             </button>
-
         </div>
+        <!-- end navigation -->
 
     </section>
     <!-- 7 Powtorka -->
     <section class="slide" id="slide7">
-        
-        <div class="card lesson-block">
+
+        <div>
 
             <h2>MINI ŚCIĄGA - SZYBKA POWTÓRKA</h2>
 
-            <img src="https://raw.github.com/ksushatarasenko/polishSzkola_4klasa_assets/main/przyroda/rozdial6/krajobraz_ogolne_albom.png"
-                class="zum">
+            <div class="zume">
+                <img src="https://raw.github.com/ksushatarasenko/polishSzkola_4klasa_assets/main/przyroda/rozdial6/krajobraz_ogolne_albom.png"
+                    class="zum">
+            </div>
 
-
+            <!-- navigation -->
             <div class="navigation">
-
-                <button class="btn-secondary" onclick="prevSlide()">
+                <button class="btn-back" onclick="prevSlide()">
                     ← Wstecz
                 </button>
 
-                <button class="btn" onclick="nextSlide()">
+                <button class="btn-next" onclick="nextSlide()">
                     Dalej →
                 </button>
-
             </div>
+            <!-- end navigation -->
 
         </div>
     </section>
@@ -480,8 +566,11 @@
     <section class="slide" id="slide8">
         <h2>🎯 Zadanie 1</h2>
         <div class="card lesson-block">
-            <img
-                src="https://upload.wikimedia.org/wikipedia/ru/6/6b/%D0%9B%D0%B8%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9_%D0%BB%D0%B5%D1%81_%D1%81%D1%80%D0%B5%D0%B4%D0%BD%D0%B5%D1%80%D1%83%D1%81%D1%81%D0%BA%D0%BE%D0%B9_%D1%80%D0%B0%D0%B2%D0%BD%D0%B8%D0%BD%D1%8B.jpg">
+            <div class="quiz-image">
+                <img
+                    src="https://upload.wikimedia.org/wikipedia/ru/6/6b/%D0%9B%D0%B8%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9_%D0%BB%D0%B5%D1%81_%D1%81%D1%80%D0%B5%D0%B4%D0%BD%D0%B5%D1%80%D1%83%D1%81%D1%81%D0%BA%D0%BE%D0%B9_%D1%80%D0%B0%D0%B2%D0%BD%D0%B8%D0%BD%D1%8B.jpg">
+            </div>
+
             <p>🎯 Jaki to krajobraz?</p>
             <div class="answers">
                 <button onclick="checkAnswer(this)" data-correct="true"> Naturalny </button>
@@ -491,25 +580,28 @@
             <div class="taskResult">
 
             </div>
+            <!-- navigation -->
             <div class="navigation">
-
-                <button class="btn-secondary" onclick="prevSlide()">
+                <button class="btn-back" onclick="prevSlide()">
                     ← Wstecz
                 </button>
 
-                <button class="btn" onclick="nextSlide()">
+                <button class="btn-next" onclick="nextSlide()">
                     Dalej →
                 </button>
-
             </div>
+            <!-- end navigation -->
         </div>
     </section>
     <!-- 9 Zadanie - 2 -->
     <section class="slide" id="slide9">
         <h2>🎯 Zadanie 2</h2>
         <div class="card lesson-block">
-            <img
-                src="https://img.freepik.com/premium-vector/children-think-cute-boys-girls-asking-questions_88100-649.jpg">
+            <div class="quiz-image">
+                <img
+                    src="https://raw.github.com/ksushatarasenko/polishSzkola_4klasa_assets/main/przyroda/rozdial6/podumaj_krajobraz.png">
+            </div>
+
             <p>🎯 Który krajobraz został stworzony przez przyrodę?</p>
             <div class="answers">
                 <button onclick="checkAnswer(this)" data-correct="true"> 🌲 Las i góry </button>
@@ -519,25 +611,28 @@
             <div class="taskResult">
 
             </div>
+            <!-- navigation -->
             <div class="navigation">
-
-                <button class="btn-secondary" onclick="prevSlide()">
+                <button class="btn-back" onclick="prevSlide()">
                     ← Wstecz
                 </button>
 
-                <button class="btn" onclick="nextSlide()">
+                <button class="btn-next" onclick="nextSlide()">
                     Dalej →
                 </button>
-
             </div>
+            <!-- end navigation -->
         </div>
     </section>
     <!-- 10 Zadanie - 3 -->
     <section class="slide" id="slide10">
         <h2>🎯 Zadanie 3</h2>
         <div class="card lesson-block">
-            <img
-                src="https://img.freepik.com/premium-vector/children-think-cute-boys-girls-asking-questions_88100-649.jpg">
+            <div class="quiz-image">
+                <img
+                    src="https://raw.github.com/ksushatarasenko/polishSzkola_4klasa_assets/main/przyroda/rozdial6/podumaj_krajobraz.png">
+            </div>
+
             <p>🎯 Który element należy do krajobrazu kulturowego?</p>
             <div class="answers">
                 <button onclick="checkAnswer(this)"> 🌊 Jezioro </button>
@@ -547,25 +642,28 @@
             <div class="taskResult">
 
             </div>
+            <!-- navigation -->
             <div class="navigation">
-
-                <button class="btn-secondary" onclick="prevSlide()">
+                <button class="btn-back" onclick="prevSlide()">
                     ← Wstecz
                 </button>
 
-                <button class="btn" onclick="nextSlide()">
+                <button class="btn-next" onclick="nextSlide()">
                     Dalej →
                 </button>
-
             </div>
+            <!-- end navigation -->
         </div>
     </section>
     <!-- 11 Zadanie - 4 -->
     <section class="slide" id="slide11">
         <h2>🎯 Zadanie 4</h2>
         <div class="card lesson-block">
-            <img
-                src="https://media.istockphoto.com/id/1159399825/pl/zdj%C4%99cie/pola-uprawne-i-gospodarstwa-w-region-del-maule-chile.jpg?s=170667a&w=0&k=20&c=8-lertOPvts8JbNg3oYeHPUCQqxc2yJRFIaUuF7Q7qc=">
+            <div class="quiz-image">
+                <img
+                    src="https://media.istockphoto.com/id/1159399825/pl/zdj%C4%99cie/pola-uprawne-i-gospodarstwa-w-region-del-maule-chile.jpg?s=170667a&w=0&k=20&c=8-lertOPvts8JbNg3oYeHPUCQqxc2yJRFIaUuF7Q7qc=">
+            </div>
+
             <p>🎯 Który krajobraz przedstawia pola uprawne i gospodarstwa?</p>
             <div class="answers">
                 <button onclick="checkAnswer(this)"> 🏭 Przemysłowy </button>
@@ -575,25 +673,27 @@
             <div class="taskResult">
 
             </div>
+            <!-- navigation -->
             <div class="navigation">
-
-                <button class="btn-secondary" onclick="prevSlide()">
+                <button class="btn-back" onclick="prevSlide()">
                     ← Wstecz
                 </button>
 
-                <button class="btn" onclick="nextSlide()">
+                <button class="btn-next" onclick="nextSlide()">
                     Dalej →
                 </button>
-
             </div>
+            <!-- end navigation -->
         </div>
     </section>
     <!-- 12 Zadanie - 5 -->
     <section class="slide" id="slide12">
         <h2>🎯 Zadanie 5</h2>
         <div class="card lesson-block">
-            <img
-                src="https://media.istockphoto.com/id/1159399825/pl/zdj%C4%99cie/pola-uprawne-i-gospodarstwa-w-region-del-maule-chile.jpg?s=170667a&w=0&k=20&c=8-lertOPvts8JbNg3oYeHPUCQqxc2yJRFIaUuF7Q7qc=">
+            <div class="quiz-image">
+                <img src="https://content.cdn-cian.ru/realty/journal/286728/Photogenica-PHX87602926.jpg">
+            </div>
+
             <p>🎯 W którym krajobrazie znajdziemy wieżowce? ( <span class="blue"><em>небоскребы</em></span> )</p>
             <div class="answers">
                 <button onclick="checkAnswer(this)"> 🌲 Naturalny </button>
@@ -603,24 +703,28 @@
             <div class="taskResult">
 
             </div>
+            <!-- navigation -->
             <div class="navigation">
-
-                <button class="btn-secondary" onclick="prevSlide()">
+                <button class="btn-back" onclick="prevSlide()">
                     ← Wstecz
                 </button>
 
-                <button class="btn" onclick="nextSlide()">
+                <button class="btn-next" onclick="nextSlide()">
                     Dalej →
                 </button>
-
             </div>
+            <!-- end navigation -->
         </div>
     </section>
     <!-- 13 Zadanie - 6 -->
     <section class="slide" id="slide13">
         <h2>🎯 Zadanie 6</h2>
         <div class="card lesson-block">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHk7teSCsJvtpM_5xB-GeAfx-7koX1Jde3jA&s">
+            <div class="quiz-image">
+                <img
+                    src="https://raw.github.com/ksushatarasenko/polishSzkola_4klasa_assets/main/przyroda/rozdial6/podumaj_krajobraz.png">
+            </div>
+
             <p>🎯 Co można zobaczyć w krajobrazie przemysłowym?</p>
             <div class="answers">
                 <button onclick="checkAnswer(this)"> 🐄 Krowy na pastwisku </button>
@@ -630,24 +734,28 @@
             <div class="taskResult">
 
             </div>
+            <!-- navigation -->
             <div class="navigation">
-
-                <button class="btn-secondary" onclick="prevSlide()">
+                <button class="btn-back" onclick="prevSlide()">
                     ← Wstecz
                 </button>
 
-                <button class="btn" onclick="nextSlide()">
+                <button class="btn-next" onclick="nextSlide()">
                     Dalej →
                 </button>
-
             </div>
+            <!-- end navigation -->
         </div>
     </section>
     <!-- 14 Zadanie - 7 -->
     <section class="slide" id="slide14">
         <h2>🎯 Zadanie 7</h2>
         <div class="card lesson-block">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHk7teSCsJvtpM_5xB-GeAfx-7koX1Jde3jA&s">
+            <div class="quiz-image">
+                <img
+                    src="https://raw.github.com/ksushatarasenko/polishSzkola_4klasa_assets/main/przyroda/rozdial6/podumaj_krajobraz.png">
+            </div>
+
             <p>🎯 Czego NIE zobaczymy w krajobrazie miejskim?</p>
             <div class="answers">
                 <button onclick="checkAnswer(this)"> 🏫 Szkoły </button>
@@ -657,23 +765,23 @@
             <div class="taskResult">
 
             </div>
+            <!-- navigation -->
             <div class="navigation">
-
-                <button class="btn-secondary" onclick="prevSlide()">
+                <button class="btn-back" onclick="prevSlide()">
                     ← Wstecz
                 </button>
 
-                <button class="btn" onclick="nextSlide()">
+                <button class="btn-next" onclick="nextSlide()">
                     Dalej →
                 </button>
-
             </div>
+            <!-- end navigation -->
         </div>
     </section>
     <!-- 15 -->
     <section class="slide" id="slide15">
 
-        <div class="csrd lesson-block">
+        <div class="cфrd lesson-block">
             <h2>🧠 Mini Test</h2>
             <div class="question" data-correct="naturalny">
                 <p>1. Jaki krajobraz tworzy przyroda?</p> <label><input type="radio" name="q1" value="naturalny">
@@ -713,17 +821,17 @@
             <div id="quizResult">
 
             </div>
+            <!-- navigation -->
             <div class="navigation">
-
-                <button class="btn-secondary" onclick="prevSlide()">
+                <button class="btn-back" onclick="prevSlide()">
                     ← Wstecz
                 </button>
 
-                <button class="btn" onclick="nextSlide()">
+                <button class="btn-next" onclick="nextSlide()">
                     Dalej →
                 </button>
-
             </div>
+            <!-- end navigation -->
         </div>
     </section>
     <!-- 16 -->
@@ -734,26 +842,22 @@
             <h1>🎉 Gratulacje!</h1>
 
             <p>Lekcja ukończona.</p>
-            <h6>🏅 Otrzymujesz odznakę:</h6>
-            <h5>MŁODY BADACZ KRAJOBRAZU</h5>
+            <h3>🏅 Otrzymujesz odznakę:</h6>
+                <h3>MŁODY BADACZ KRAJOBRAZU</h5>
 
-            <ul>
-                <li>✅ rozpoznajesz rodzaje krajobrazu</li>
-                <li>✅ znasz podstawowe pojęcia</li>
-                <li>✅ jesteś gotowy do sprawdzianu</li>
-            </ul>
+                    <ul>
+                        <li>✅ rozpoznajesz rodzaje krajobrazu</li>
+                        <li>✅ znasz podstawowe pojęcia</li>
+                        <li>✅ jesteś gotowy do sprawdzianu</li>
+                    </ul>
 
-            <div class="navigation">
+                    <p class="survey-text">📝 Wypełnij krótką ankietę dla rodziców</p>
 
-                <button class="btn-secondary" onclick="prevSlide()">
-                    ← Wstecz
-                </button>
-
-                <button class="btn" onclick="nextSlide()">
-                    Dalej →
-                </button>
-
-            </div>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSe2lVAGNc5BY70XMJDQudIh2xpq3cvjleM21-YbFbrSRsw2Sg/viewform?usp=publish-editor"
+                        target="_blank" class="survey-btn">
+                        ⭐ Ankieta dla rodziców
+                    </a>
+                    
 
         </div>
 
